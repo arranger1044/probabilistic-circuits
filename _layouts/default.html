@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery ||
+      document.write('<script src="js/libs/jquery-1.11.3.min.js"><\/script>')</script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $("a.bibtex").click(function(event) {
+      
+      var label = $(this);
+      console.log($(this).parent().text());
+      console.log($(this).nextAll("div.paper-bibtex").first().text());
+      $(this).nextAll("div.paper-bibtex").first().slideToggle("fast",
+      function(){
+      if ($(this).is(":visible")) {
+      label.text('hide bibtex');    
+      } else {
+      label.text('bibtex');                
+      }
+      });
+      });
+
+      $("a.abstract").click(function(event) {
+      
+      var label = $(this);
+      <!-- console.log($(this).parent().text()); -->
+      console.log($(this).nextAll("div.paper-abstract").first().text());
+      $(this).nextAll("div.paper-abstract").first().slideToggle("fast",
+      function(){
+      if ($(this).is(":visible")) {
+      label.text('hide abstract');    
+      } else {
+      label.text('abstract');                
+      }
+      });
+      });
+      });
+    </script>
+  </body>
+
+</html>
