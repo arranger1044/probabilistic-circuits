@@ -1,0 +1,137 @@
+/**
+ * Site header
+ */
+.paper {
+    display: inline-grid;
+    /* grid-column-gap: 20px; */
+    width: 100%;
+}
+
+#papers li{
+    list-style-type: none;
+}
+
+.paper-data {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width:95%;
+    /* max-width:750px; */
+    min-width:95%;
+}
+
+.paper-pic {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    width:95%;
+    max-width:100px;
+}
+
+.paper-pic img{    
+    max-width: 150px;
+    padding-top:30px;
+    padding-left:10px;
+    /* -webkit-filter: grayscale(100%); /\* Safari 6.0 - 9.0 *\/ */
+    /* filter: grayscale(100%); */
+}
+
+.paper-name{
+    font-size: 120%;
+    font-weight:800;
+    font-style:italic;
+    /* background-color: rgb(250, 130, 0); */
+    /* color: white !important; */
+    color: rgb(26, 176, 184) !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    display: inline-block;
+}
+
+.paper-authors{
+    font-size: 80%;
+    font-weight:200;
+    font-style:italic;
+}
+
+.paper-short{
+    font-size: 90%;
+    /* font-weight:200; */
+    /* font-style:italic; */
+}
+
+.paper-venue{
+    margin-bottom:0px;
+    font-size: 80%;
+    font-weight:800;
+    /* background-color: black; */
+    /* color: white !important; */
+    color: black;
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
+    display: inline-block;
+}
+
+
+#research-bio {
+    text-align:left;
+    font-style:italic;
+    font-size:90%;
+    padding-left:-20px;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+
+.paper-abstract{
+    display: none;
+    
+}
+
+.paper-bibtex{
+    display: none;
+}
+
+.paper-year{
+    padding-top: 30px;
+    font-size: 120%;
+    font-weight:800;
+    font-style:italic;
+}
+
+pre, code{
+    white-space:normal;
+    font-size: 80%;
+    background-color: white;
+}
+
+#papers ul{
+    padding-left:0px;
+    margin-top:0px;
+}
+
+.paper-list{
+    padding-left:0px;
+    margin-top:0px;
+    margin-left:0px;
+}
+
+.tags{
+    float: right;
+}
+
+.tags span{
+    font-size: 100%;
+    font-weight:800;
+    font-style:italic;
+    margin-top:2px;
+    margin-bottom:2px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    max-width: 140px;
+    display: inline-block;
+}
