@@ -48,8 +48,8 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
+.wrapper { max-width: -webkit-calc(1024px - (30px * 2)); max-width: calc(1024px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(1024px - (30px)); max-width: calc(1024px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
@@ -145,7 +145,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .paper-pic img { max-width: 150px; padding-top: 30px; padding-left: 10px; /* -webkit-filter: grayscale(100%); /\* Safari 6.0 - 9.0 *\/ */ /* filter: grayscale(100%); */ }
 
-.paper-name { font-size: 120%; font-weight: 800; font-style: italic; /* background-color: rgb(250, 130, 0); */ /* color: white !important; */ color: #1ab0b8 !important; padding-left: 0px; padding-right: 0px; padding-top: 0px; display: inline-block; }
+.paper-title { font-size: 120%; font-weight: 800; font-style: italic; /* background-color: rgb(250, 130, 0); */ /* color: white !important; */ color: #1ab0b8 !important; padding-left: 0px; padding-right: 0px; padding-top: -2px; display: inline-block; }
 
 .paper-authors { font-size: 80%; font-weight: 200; font-style: italic; }
 
@@ -169,7 +169,13 @@ pre, code { white-space: normal; font-size: 80%; background-color: white; }
 
 .tags { float: right; }
 
-.tags span { font-size: 100%; font-weight: 800; font-style: italic; margin-top: 2px; margin-bottom: 2px; color: white; padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px; max-width: 140px; display: inline-block; }
+.tags span { font-size: 80%; font-weight: 800; margin-top: 2px; margin-bottom: 2px; color: white; padding-left: 7px; padding-right: 7px; padding-top: 2px; padding-bottom: 2px; max-width: 140px; display: inline-block; }
+
+.tags span.cnets { background-color: #c70e5b; }
+
+.tags span.par-le { background-color: #6e6e6e; }
+
+.tags span.str-le { background-color: #6e6e6e; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
