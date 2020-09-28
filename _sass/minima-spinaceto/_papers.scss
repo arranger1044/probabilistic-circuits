@@ -34,16 +34,17 @@
     /* filter: grayscale(100%); */
 }
 
-.paper-name{
+.paper-title{
     font-size: 120%;
     font-weight:800;
     font-style:italic;
     /* background-color: rgb(250, 130, 0); */
     /* color: white !important; */
     color: rgb(26, 176, 184) !important;
+    // color: black;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 0px;
+    padding-top: -2px;
     display: inline-block;
 }
 
@@ -122,16 +123,28 @@ pre, code{
 }
 
 .tags span{
-    font-size: 100%;
+    font-size: 80%;
     font-weight:800;
-    font-style:italic;
+    // font-style:italic;
     margin-top:2px;
     margin-bottom:2px;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
     padding-top: 2px;
     padding-bottom: 2px;
     max-width: 140px;
     display: inline-block;
+}
+
+.tags span.cnets{
+    background-color: $model-color;
+}
+
+.tags span.par-le{
+    background-color: $algo-color;
+}
+
+.tags span.str-le{
+    background-color: $algo-color;
 }

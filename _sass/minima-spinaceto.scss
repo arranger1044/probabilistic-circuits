@@ -19,10 +19,14 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$model-color:       #c70e5b !default;
+$inference-color:       #d4600d !default;
+$algo-color:       #6e6e6e !default;
+
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    1024px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
@@ -51,3 +55,11 @@ $on-laptop:        800px !default;
   "minima-spinaceto/papers",
   "minima-spinaceto/syntax-highlighting"
 ;
+
+
+
+
+
+
+
+
