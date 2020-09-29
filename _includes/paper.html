@@ -1,0 +1,42 @@
+{% assign paper = include.paper %}
+<div class="paper">
+  <div class="paper-data">
+    <div class="paper-venue">
+      {{ paper.venue }}
+    </div><br/>
+    <div class="paper-title">
+      {{ paper.title | escape}}
+    </div>
+    <div class="paper-authors">
+      {{ paper.authors }}
+    </div>
+    [ <a href="{{ paper.pdf }}">pdf</a> |
+    <a href="#" class="bibtex">bibtex </a>
+    {%- if paper.code -%}
+    | <a href="{{ paper.code }}">code </a> 
+    {%- endif -%}
+    {%- if paper.abstract -%}
+    | <a href="#" class="abstract">abstract </a>
+    {%- endif -%}
+    {%- if paper.supplemental -%}
+    | <a href="#" class="supplemental">supplemental </a>
+    {%- endif -%}
+    ]
+    <div class="tags">
+      {%- for t in paper.tags -%}
+      <span class={{t}}>{{t}}</span>
+      {%- endfor -%}
+    </div>
+    <div class="paper-abstract">
+      <pre><code>
+          {{ paper.abstract | lstrip  }}
+      </code></pre>
+    </div>
+    <div class="paper-bibtex">
+      <pre><code>
+          {{ paper.bibtex | lstrip }}                
+      </code></pre>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,13 @@
+{% assign topic = include.topic %}
+<h2 class="paper-list-heading">Publications about {{topic}}</h2>
+
+{% assign sorted = site.papers | sort: 'date' | reverse %}
+<ul class="paper-list">
+{% for p in sorted %}
+   {% if p.tags contains topic %}      
+       <li>
+       {% include paper.html paper=p %}
+       </li>
+    {% endif %}
+{% endfor %}
+</ul>

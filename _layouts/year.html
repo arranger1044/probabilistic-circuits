@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="home">
+  <!-- {%- if page.title -%} -->
+  <!--   <h1 class="page-heading">{{ page.title }}</h1> -->
+  <!-- {%- endif -%} -->
+
+    {{ content }}
+    <div id="papers">
+    {%- if site.papers.size > 0 -%}
+    <h2 class="paper-list-heading">{{ page.list_title | default:
+    "Publications by year" }}</h2>
+
+      {% assign sorted = site.papers | sort: 'date' | reverse %}
+      {% assign papers = sorted | group_by_exp:"paper", "paper.date | date: '%Y'" %}
+      {% for year in papers %}
+      <div class="paper-year" id="#{{ year.name }}"><a href="#{{ year.name }}">{{ year.name }}</a></div>
+      <ul class="paper-list">
+        {% for p in year.items %}
+        <li>
+          {% include paper.html paper=p %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

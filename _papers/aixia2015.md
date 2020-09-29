@@ -2,10 +2,9 @@
 layout: post
 ref: "dimauro2015learning"
 title:  "Learning Inaccurate Cutset Networks by Exploiting Decomposability"
-date:   2016-05-09 10:20
+date:   2015-05-09 10:20
 categories: cnets, parameter-learning, structure-learning
 tags: cnets par-le str-le
-pubyear: 2016
 image: images/dcsn.png
 authors: "Nicola Di Mauro, Antonio Vergari and Floriana Esposito"
 pdf: "http://www.di.uniba.it/~ndm/pubs/ndm15aixia.pdf"
