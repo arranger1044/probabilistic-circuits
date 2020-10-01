@@ -5,6 +5,7 @@
 $base-font-family: "Open Sans", 'PT Sans', sans-serif;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
+$bold-font-weight: 600 !default;
 $extra-bold-font-weight: 800 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -19,14 +20,16 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-$model-color:       #c70e5b !default;
+$model-color:       #d40d60 !default;
 $inference-color:       #d4600d !default;
-$algo-color:       #6e6e6e !default;
+$algo-color:       #76b599 !default;
+$misc-color:       #6e6e6e !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
 $content-width:    1024px !default;
+$margin-top-header: 60px;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;

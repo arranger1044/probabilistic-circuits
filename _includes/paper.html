@@ -24,7 +24,7 @@
     ]
     <div class="tags">
       {%- for t in paper.tags -%}
-      <span class={{t}}>{{t}}</span>
+      <span class={{t}}><a href="./topics#{{t}}">{{t}}</a></span>
       {%- endfor -%}
     </div>
     <div class="paper-abstract">

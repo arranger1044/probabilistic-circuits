@@ -1,7 +1,21 @@
 {% assign topic = include.topic %}
-<h2 class="paper-list-heading">Publications about {{topic}}</h2>
+{% assign topic_display = include.name %}
+
 
 {% assign sorted = site.papers | sort: 'date' | reverse %}
+{% assign atleastone = "no" %}
+<!-- {% assign atleastone = sorted | find_exp:"paper", "paper.tags contains topic" %} -->
+{% for p in sorted %}
+    {% if p.tags contains topic %}      
+    {% assign atleastone = "yes" %}   
+    {% endif %}
+{% endfor %}
+
+
+{% if atleastone == "yes" %}
+    <h3 class="paper-list-heading" id="{{topic}}">{{topic_display}}</h3>
+{% endif %}
+
 <ul class="paper-list">
 {% for p in sorted %}
    {% if p.tags contains topic %}      

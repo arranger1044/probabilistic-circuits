@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-#papers li{
+.paper-list li{
     list-style-type: none;
 }
 
@@ -17,6 +17,7 @@
     width:95%;
     /* max-width:750px; */
     min-width:95%;
+    margin-bottom:20px;
 }
 
 .paper-pic {
@@ -96,9 +97,10 @@
 
 .paper-year{
     padding-top: 30px;
+    padding-bottom: 10px;
     font-size: 120%;
     font-weight:800;
-    font-style:italic;
+    // text-decoration: underline; 
 }
 
 pre, code{
@@ -122,7 +124,7 @@ pre, code{
     float: right;
 }
 
-.tags span{
+.tags span a{
     font-size: 80%;
     font-weight:800;
     // font-style:italic;
@@ -135,7 +137,9 @@ pre, code{
     padding-bottom: 2px;
     max-width: 140px;
     display: inline-block;
+    text-decoration: none; 
 }
+
 
 .tags span.cnets{
     background-color: $model-color;
@@ -147,4 +151,34 @@ pre, code{
 
 .tags span.str-le{
     background-color: $algo-color;
+}
+
+.tags span.misc{
+    background-color: $misc-color;
+}
+
+
+.paper-list-heading.model{
+    color: $model-color;
+}
+
+.paper-list-heading.algo{
+    color: $algo-color;
+}
+
+.paper-list-heading.misc{
+    color: $misc-color;
+}
+
+.paper-list-heading.inf{
+    color: $inference-color;
+}
+
+
+h3.paper-list-heading {
+    display: block;
+    position: relative;
+    margin-top: -$margin-top-header;
+    padding-top: $margin-top-header;
+    // visibility: hidden;
 }

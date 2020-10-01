@@ -5,7 +5,33 @@ layout: default
 <div class="home">
 
   {{ content }}
+  
+
+  <h2 class="paper-list-heading algo">Publications by algorithm</h2>
+  {% for t in page.algo_topics %}
+      {% assign topic_name = t[1] %}
+      {% assign topic_key = t[0] %}
+      {% include topic.html topic=topic_key name=topic_name %}
+  {% endfor %}
+
+  <h2 class="paper-list-heading ing">Publications by inference</h2>
+  {% for t in page.inf_topics %}
+      {% assign topic_name = t[1] %}
+      {% assign topic_key = t[0] %}
+      {% include topic.html topic=topic_key name=topic_name %}
+  {% endfor %}
+
+  <h2 class="paper-list-heading model">Publications by model</h2>
   {% for t in page.model_topics %}
-    {% include topic.html topic=t %}
+      {% assign topic_name = t[1] %}
+      {% assign topic_key = t[0] %}
+      {% include topic.html topic=topic_key name=topic_name %}
+  {% endfor %}
+
+  <h2 class="paper-list-heading misc">Publications by application</h2>
+  {% for t in page.misc_topics %}
+      {% assign topic_name = t[1] %}
+      {% assign topic_key = t[0] %}
+      {% include topic.html topic=topic_key name=topic_name %}
   {% endfor %}
 </div>
