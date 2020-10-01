@@ -11,12 +11,12 @@
       {{ paper.authors }}
     </div>
     [ <a href="{{ paper.pdf }}">pdf</a> |
-    <a href="#" class="bibtex">bibtex </a>
+    <a href="#{{paper.ref}}" class="bibtex">bibtex </a>
     {%- if paper.code -%}
     | <a href="{{ paper.code }}">code </a> 
     {%- endif -%}
     {%- if paper.abstract -%}
-    | <a href="#" class="abstract">abstract </a>
+    | <a href="#{{paper.ref}}" class="abstract">abstract </a>
     {%- endif -%}
     {%- if paper.supplemental -%}
     | <a href="#" class="supplemental">supplemental </a>
