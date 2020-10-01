@@ -69,7 +69,7 @@ table td { border: 1px solid #e8e8e8; }
 /** Site header */
 .site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: fixed; background-color: white; width: 100%; }
 
-.site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
+.site-title { font-size: 27.6px; font-weight: 800; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 .site-title, .site-title:visited { color: #424242; }
 
 .site-nav { float: right; line-height: 54px; }
@@ -145,7 +145,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .paper-pic img { max-width: 150px; padding-top: 30px; padding-left: 10px; /* -webkit-filter: grayscale(100%); /\* Safari 6.0 - 9.0 *\/ */ /* filter: grayscale(100%); */ }
 
-.paper-title { font-size: 120%; font-weight: 800; font-style: italic; /* background-color: rgb(250, 130, 0); */ /* color: white !important; */ color: #1ab0b8 !important; padding-left: 0px; padding-right: 0px; padding-top: -2px; display: inline-block; }
+.paper-title { font-size: 120%; font-weight: 800; font-style: italic; /* background-color: rgb(250, 130, 0); */ /* color: white !important; */ color: #1ab0b8 !important; padding-left: 0px; padding-right: 0px; margin-top: -60px -10px; padding-top: 70px -2px; display: inline-block; }
 
 .paper-authors { font-size: 80%; font-weight: 200; font-style: italic; }
 
@@ -173,11 +173,53 @@ pre, code { white-space: normal; font-size: 80%; background-color: white; }
 
 .tags span.cnets { background-color: #d40d60; }
 
+.tags span.acs { background-color: #d40d60; }
+
+.tags span.spns { background-color: #d40d60; }
+
+.tags span.pcs { background-color: #d40d60; }
+
+.tags span.aogs { background-color: #d40d60; }
+
+.tags span.pdgs { background-color: #d40d60; }
+
+.tags span.psdds { background-color: #d40d60; }
+
 .tags span.par-le { background-color: #76b599; }
 
 .tags span.str-le { background-color: #76b599; }
 
+.tags span.comp { background-color: #76b599; }
+
+.tags span.cv { background-color: #6e6e6e; }
+
+.tags span.nlp { background-color: #6e6e6e; }
+
+.tags span.seg { background-color: #6e6e6e; }
+
+.tags span.act { background-color: #6e6e6e; }
+
+.tags span.rob { background-color: #6e6e6e; }
+
+.tags span.bio { background-color: #6e6e6e; }
+
 .tags span.misc { background-color: #6e6e6e; }
+
+.tags span.the { background-color: #6e6e6e; }
+
+.tags span.ppl { background-color: #6e6e6e; }
+
+.tags span.mar { background-color: #d4600d; }
+
+.tags span.map { background-color: #d4600d; }
+
+.tags span.mmap { background-color: #d4600d; }
+
+.tags span.div { background-color: #d4600d; }
+
+.tags span.exp { background-color: #d4600d; }
+
+.tags span.mom { background-color: #d4600d; }
 
 .paper-list-heading.model { color: #d40d60; }
 
