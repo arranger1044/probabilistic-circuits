@@ -1,7 +1,7 @@
 ---
 layout: paper
 ref: "dimauro2015learning"
-title:  "Learning Inaccurate Cutset Networks by Exploiting Decomposability"
+title:  "Learning Accurate Cutset Networks by Exploiting Decomposability"
 date:   2015-05-09 00:00
 categories: cnets, parameter-learning, structure-learning
 tags: cnets par-le str-le

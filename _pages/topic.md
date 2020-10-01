@@ -13,6 +13,7 @@ model_topics:
 algo_topics: 
   str-le: Structure learning
   par-le: Parameter learning
+  comp: Compilation
 inf_topics: 
   mar: Marginal inference
   map: MAP inference
@@ -23,10 +24,12 @@ inf_topics:
 misc_topics: 
   cv: Computer vision
   nlp: Natural language processing
-  segm: Semantic segmentation
+  seg: Semantic segmentation
   act: Activity recognition
   rob: Robotics
   bio: Computational biology
+  the: Theory
+  ppl: Probabilistic Programming
   misc: Other applications
 
 ---
