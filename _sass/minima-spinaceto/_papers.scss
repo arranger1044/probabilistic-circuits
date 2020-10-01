@@ -45,7 +45,9 @@
     // color: black;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: -2px;
+    margin-top: -$margin-top-header -10px;
+    padding-top: $margin-top-header +10px -2px;
+    // padding-top: -2px;
     display: inline-block;
 }
 
@@ -145,6 +147,32 @@ pre, code{
     background-color: $model-color;
 }
 
+.tags span.acs{
+    background-color: $model-color;
+}
+
+.tags span.spns{
+    background-color: $model-color;
+}
+
+.tags span.pcs{
+    background-color: $model-color;
+}
+
+.tags span.aogs{
+    background-color: $model-color;
+}
+
+.tags span.pdgs{
+    background-color: $model-color;
+}
+
+.tags span.psdds{
+    background-color: $model-color;
+}
+
+
+
 .tags span.par-le{
     background-color: $algo-color;
 }
@@ -153,9 +181,71 @@ pre, code{
     background-color: $algo-color;
 }
 
+.tags span.comp{
+    background-color: $algo-color;
+}
+
+
+.tags span.cv{
+    background-color: $misc-color;
+}
+
+.tags span.nlp{
+    background-color: $misc-color;
+}
+
+.tags span.seg{
+    background-color: $misc-color;
+}
+
+.tags span.act{
+    background-color: $misc-color;
+}
+
+.tags span.rob{
+    background-color: $misc-color;
+}
+
+.tags span.bio{
+    background-color: $misc-color;
+}
+
 .tags span.misc{
     background-color: $misc-color;
 }
+
+.tags span.the{
+    background-color: $misc-color;
+}
+
+.tags span.ppl{
+    background-color: $misc-color;
+}
+
+.tags span.mar{
+    background-color: $inference-color;
+}
+
+.tags span.map{
+    background-color: $inference-color;
+}
+
+.tags span.mmap{
+    background-color: $inference-color;
+}
+
+.tags span.div{
+    background-color: $inference-color;
+}
+
+.tags span.exp{
+    background-color: $inference-color;
+}
+
+.tags span.mom{
+    background-color: $inference-color;
+}
+
 
 
 .paper-list-heading.model{
