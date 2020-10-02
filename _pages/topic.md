@@ -26,6 +26,7 @@ misc_topics:
   nlp: Natural language processing
   seg: Semantic segmentation
   act: Activity recognition
+  spe: Speech recognition and reconstruction
   rob: Robotics
   bio: Computational biology
   the: Theory
