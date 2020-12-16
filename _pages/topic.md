@@ -31,6 +31,7 @@ misc_topics:
   bio: Computational biology
   the: Theory
   ppl: Probabilistic Programming
+  rep: Representation Learning
   misc: Other applications
 
 ---

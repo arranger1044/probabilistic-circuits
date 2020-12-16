@@ -12,8 +12,17 @@ def remove_parenthesis(token):
     return token.strip("{}")
 
 def invert_author(author):
+    #
+    # very crude heuristics
     names = author.split(' ')
-    return names[-1] + ", " + " ".join(names[:-1])
+    first_name = [names[0]]
+    for n in names[1:]:
+        if '.' in n:
+            first_name.append(n)
+        else:
+            break
+    # return names[-1] + ", " + " ".join(names[:-1])
+    return " ".join([n for n in names if n not in first_name]) + ", " + " ".join(first_name)
 
 def process_authors(token):
 
@@ -46,8 +55,8 @@ def get_first_word(words):
     return ""
 
 def process_ref(authors, year, title):
-
     first_author = authors.split(",")[0].strip().lower()
+    first_author = re.sub(' +', '', first_author)
     first_word = get_first_word(title.split(" ")).strip().lower()
     return "{}{}{}".format(first_author, year, first_word)
 
@@ -63,6 +72,7 @@ def replace_authors(bibtex, old_authors, new_authors):
     return bibtex.replace(old_authors, f"{{{new_authors}}}")
     
 def break_tokens(bibtex):
+    bibtex = bibtex.strip()
     tokens = bibtex.split(',')
     entry = tokens[0]
 
@@ -91,7 +101,7 @@ def gen_markdown(data, bibtex, id):
 layout: paper
 ref: "{}"
 title:  "{}"
-date:   {}-06-{} 00:00
+date:   {}-08-{} 00:00
 tags: ""
 image: ""
 authors: "{}"
@@ -108,19 +118,23 @@ bibtex: "{}"
 if __name__ == "__main__":
 
     
-    a = """@inproceedings{DBLP:conf/bracis/SguerraC16,
-  author    = {Bruno Massoni Sguerra and
-               F{\'{a}}bio Gagliardi Cozman},
-  title     = {Image Classification Using Sum-Product Networks for Autonomous Flight
-               of Micro Aerial Vehicles},
-  booktitle = {{BRACIS}},
-  pages     = {139--144},
-  publisher = {{IEEE} Computer Society},
-  year      = {2016}
-}"""
+    a = """
+
+
+@inproceedings{DBLP:conf/icmla/DennisV17a,
+  author    = {Aaron W. Dennis and
+               Dan Ventura},
+  title     = {Autoencoder-Enhanced Sum-Product Networks},
+  booktitle = {{ICMLA}},
+  pages     = {1041--1044},
+  publisher = {{IEEE}},
+  year      = {2017}
+}
+
+"""
 
 
     data, bibtex = break_tokens(a)
-    print(gen_markdown(data, bibtex, 27))
+    print(gen_markdown(data, bibtex, 9))
 
 
