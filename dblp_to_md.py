@@ -119,22 +119,20 @@ if __name__ == "__main__":
 
     
     a = """
-
-
-@inproceedings{DBLP:conf/icmla/DennisV17a,
-  author    = {Aaron W. Dennis and
-               Dan Ventura},
-  title     = {Autoencoder-Enhanced Sum-Product Networks},
-  booktitle = {{ICMLA}},
-  pages     = {1041--1044},
-  publisher = {{IEEE}},
-  year      = {2017}
+@inproceedings{DBLP:conf/nips/JainiPY18,
+  author    = {Priyank Jaini and
+               Pascal Poupart and
+               Yaoliang Yu},
+  title     = {Deep Homogeneous Mixture Models: Representation Separation and Approximation},
+  booktitle = {NeurIPS},
+  pages     = {7136--7145},
+  year      = {2018}
 }
 
 """
 
 
     data, bibtex = break_tokens(a)
-    print(gen_markdown(data, bibtex, 9))
+    print(gen_markdown(data, bibtex, 17))
 
 

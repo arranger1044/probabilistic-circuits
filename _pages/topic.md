@@ -32,6 +32,7 @@ misc_topics:
   the: Theory
   ppl: Probabilistic Programming
   rep: Representation Learning
+  hw: Hardware
   misc: Other applications
 
 ---
