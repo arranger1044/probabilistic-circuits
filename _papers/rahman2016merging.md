@@ -3,7 +3,7 @@ layout: paper
 ref: "rahman2016merging"
 title:  "Merging Strategies for Sum-Product Networks: From Trees to Graphs"
 date:   2016-06-20 00:00
-tags: spns str-le
+tags: cnets spns str-le
 image: ""
 authors: "Rahman, Tahrima and Gogate, Vibhav"
 pdf: "http://www.auai.org/uai2016/proceedings/papers/71.pdf"

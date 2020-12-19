@@ -119,20 +119,26 @@ if __name__ == "__main__":
 
     
     a = """
-@inproceedings{DBLP:conf/nips/JainiPY18,
-  author    = {Priyank Jaini and
-               Pascal Poupart and
-               Yaoliang Yu},
-  title     = {Deep Homogeneous Mixture Models: Representation Separation and Approximation},
-  booktitle = {NeurIPS},
-  pages     = {7136--7145},
-  year      = {2018}
+
+
+@inproceedings{DBLP:conf/aiia/MauroVE15,
+  author    = {Nicola Di Mauro and
+               Antonio Vergari and
+               Floriana Esposito},
+  title     = {Learning Accurate Cutset Networks by Exploiting Decomposability},
+  booktitle = {AI*IA},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9336},
+  pages     = {221--232},
+  publisher = {Springer},
+  year      = {2015}
 }
+
 
 """
 
 
     data, bibtex = break_tokens(a)
-    print(gen_markdown(data, bibtex, 17))
+    print(gen_markdown(data, bibtex, 12))
 
 

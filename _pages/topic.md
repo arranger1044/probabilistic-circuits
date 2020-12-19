@@ -33,6 +33,7 @@ misc_topics:
   ppl: Probabilistic Programming
   rep: Representation Learning
   hw: Hardware
+  sw: Software
   misc: Other applications
 
 ---
