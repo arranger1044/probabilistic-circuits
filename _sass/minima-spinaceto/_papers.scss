@@ -263,6 +263,18 @@ pre, code{
 }
 
 
+.tags span.sam{
+    background-color: $inference-color;
+}
+
+.tags span.imp{
+    background-color: $inference-color;
+}
+
+.tags span.app{
+    background-color: $inference-color;
+}
+
 
 .paper-list-heading.model{
     color: $model-color;

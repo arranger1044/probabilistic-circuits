@@ -21,6 +21,9 @@ inf_topics:
   div: Divergences, IPMs
   exp: Expectations
   mom: Moments
+  sam: Sampling
+  app: Approximate inference
+  imp: Imprecise probabilities
 misc_topics: 
   cv: Computer vision
   nlp: Natural language processing
