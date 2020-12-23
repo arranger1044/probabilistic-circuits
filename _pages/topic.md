@@ -37,6 +37,7 @@ misc_topics:
   rep: Representation Learning
   hw: Hardware
   sw: Software
+  xai: Explanations
   misc: Other applications
 
 ---

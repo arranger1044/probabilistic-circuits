@@ -3,7 +3,7 @@ layout: paper
 ref: "dang2021juice"
 title:  "Juice: A Julia Package for Logic and Probabilistic Circuits"
 date:   2021-02-1 00:00
-tags: pcs exp
+tags: pcs sw
 image: ""
 authors: "Dang, Meihua and Khosravi, Pasha and Liang, Yitao and Vergari, Antonio and Van den Broeck, Guy"
 pdf: "http://starai.cs.ucla.edu/papers/DangAAAI21.pdf"

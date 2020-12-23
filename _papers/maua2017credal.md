@@ -3,7 +3,7 @@ layout: paper
 ref: "maua2017credal"
 title:  "Credal Sum-Product Networks"
 date:   2017-07-29 00:00
-tags: spns mar map
+tags: spns cre mar map
 image: ""
 authors: "Maua, Denis Deratani and Cozman, Fabio Gagliardi and Conaty, Diarmaid and de Campos, Cassio P."
 pdf: "http://proceedings.mlr.press/v62/mau%C3%A117a/mau%C3%A117a.pdf"

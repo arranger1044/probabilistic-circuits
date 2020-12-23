@@ -3,7 +3,7 @@ layout: paper
 ref: "khosravi2019tractable"
 title:  "On Tractable Computation of Expected Predictions"
 date:   2019-08-30 00:00
-tags: pcs exp
+tags: pcs exp xai
 image: ""
 authors: "Khosravi, Pasha and Choi, YooJung and Liang, Yitao and Vergari, Antonio and Van den Broeck, Guy"
 pdf: "https://papers.nips.cc/paper/9296-on-tractable-computation-of-expected-predictions.pdf"

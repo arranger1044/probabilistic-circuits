@@ -3,7 +3,7 @@ layout: paper
 ref: "vergari2019visualizing"
 title:  "Visualizing and understanding Sum-Product Networks"
 date:   2019-08-14 00:00
-tags: spns rep misc
+tags: spns rep xai
 image: ""
 authors: "Vergari, Antonio and Di Mauro, Nicola and Esposito, Floriana"
 pdf: "https://link.springer.com/article/10.1007/s10994-018-5760-y"
