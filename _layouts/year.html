@@ -8,15 +8,23 @@ layout: default
   <!-- {%- endif -%} -->
 
     {{ content }}
-    <div id="papers">
-    {%- if site.papers.size > 0 -%}
-    <h2 class="paper-list-heading">{{ page.list_title | default:
-    "Publications by year" }}</h2>
-
+    <div id="quicklist">
+      {%- if site.papers.size > 0 -%}
+      <h3 class="paper-list-heading">{{ page.list_title | default:
+         "Publications by year" }}</h2>
       {% assign sorted = site.papers | sort: 'date' | reverse %}
       {% assign papers = sorted | group_by_exp:"paper", "paper.date | date: '%Y'" %}
       {% for year in papers %}
-      <div class="paper-year" id="#{{ year.name }}"><a href="#{{ year.name }}">{{ year.name }}</a></div>
+      <span class="paper-year-link"><a href="./year#{{ year.name }}">{{ year.name }}</a></span>
+      {% endfor %}
+      {%- endif -%}
+    </div>
+    <div id="papers">
+    {%- if site.papers.size > 0 -%}
+      {% assign sorted = site.papers | sort: 'date' | reverse %}
+      {% assign papers = sorted | group_by_exp:"paper", "paper.date | date: '%Y'" %}
+      {% for year in papers %}
+      <div class="paper-year" id="{{ year.name }}">{{ year.name }}</div>
       <ul class="paper-list">
         {% for p in year.items %}
         <li>

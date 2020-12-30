@@ -1,7 +1,7 @@
 ---
 layout: paper
 ref: "vandenbroeck2020tractability"
-title:  "On the Tractability of {SHAP} Explanations"
+title:  "On the Tractability of SHAP Explanations"
 date:   2021-01-28 00:00
 tags: pcs exp the
 image: ""
