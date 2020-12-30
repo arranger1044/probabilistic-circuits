@@ -217,6 +217,8 @@ pre, code { white-space: normal; font-size: 80%; background-color: white; }
 
 .tags span.ppl { background-color: #6e6e6e; }
 
+.tags span.xai { background-color: #6e6e6e; }
+
 .tags span.mar { background-color: #d4600d; }
 
 .tags span.map { background-color: #d4600d; }
@@ -228,6 +230,14 @@ pre, code { white-space: normal; font-size: 80%; background-color: white; }
 .tags span.exp { background-color: #d4600d; }
 
 .tags span.mom { background-color: #d4600d; }
+
+.tags span.sam { background-color: #d4600d; }
+
+.tags span.imp { background-color: #d4600d; }
+
+.tags span.app { background-color: #d4600d; }
+
+.tags span.app { background-color: #d4600d; }
 
 .paper-list-heading.model { color: #d40d60; }
 
