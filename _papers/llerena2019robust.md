@@ -3,7 +3,7 @@ layout: paper
 ref: "llerena2019robust"
 title:  "Robust Analysis of MAP Inference in Selective Sum-Product Networks"
 date:   2019-08-22 00:00
-tags: spns acs cre map
+tags: spns acs imp map
 image: ""
 authors: "Llerena, Julissa Giuliana Villanueva and Maua, Denis Deratani"
 pdf: "http://proceedings.mlr.press/v103/villanueva-llerena19a/villanueva-llerena19a.pdf"

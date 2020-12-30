@@ -3,7 +3,7 @@ layout: paper
 ref: "antonucci2019credal"
 title:  "Credal Sentential Decision Diagrams"
 date:   2019-08-22 00:00
-tags: psdds cre
+tags: psdds imp
 image: ""
 authors: "Antonucci, Alessandro and Facchini, Alessandro and Mattei, Lilith"
 pdf: "http://proceedings.mlr.press/v103/antonucci19a/antonucci19a.pdf"

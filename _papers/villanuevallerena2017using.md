@@ -3,7 +3,7 @@ layout: paper
 ref: "villanuevallerena2017using"
 title:  "On Using Sum-Product Networks for Multi-label Classification"
 date:   2017-08-22 00:00
-tags: spns cre map
+tags: spns imp map
 image: ""
 authors: "Llerena, Julissa Villanueva and Maua, Denis Deratani"
 pdf: "https://ieeexplore.ieee.org/iel7/8246023/8247008/08247024.pdf?casa_token=iOpTXXP6z1wAAAAA:dzMSYBNHZ_x6ln311pmj-SoEknq-y7UVfkcX4l6Ivc-WHA-xa4q1EtrFd3__hmYvZ8wUmsB5MgBf"

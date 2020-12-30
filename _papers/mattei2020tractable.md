@@ -3,7 +3,7 @@ layout: paper
 ref: "mattei2020tractable"
 title:  "Tractable inference in credal sentential decision diagrams"
 date:   2020-08-22 00:00
-tags: psdd cre mar map
+tags: psdds imp mar map
 image: ""
 authors: "Mattei, Lilith and Antonucci, Alessandro and Deratani Maua, Denis and Facchini, Alessandro and Llerena, Julissa Villanueva"
 pdf: "https://arxiv.org/pdf/2008.08524"

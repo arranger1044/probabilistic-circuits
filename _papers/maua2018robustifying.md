@@ -3,7 +3,7 @@ layout: paper
 ref: "maua2018robustifying"
 title:  "Robustifying sum-product networks"
 date:   2018-08-22 00:00
-tags: spns cre
+tags: spns imp
 image: ""
 authors: "Maua, Denis Deratani and Conaty, Diarmaid and Gagliardi Cozman, Fabio and Poppenhaeger, Katja and de Campos, Cassio Polpo"
 pdf: "https://dspace.library.uu.nl/bitstream/handle/1874/369058/final.pdf?sequence=1"

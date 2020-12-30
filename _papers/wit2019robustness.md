@@ -3,7 +3,7 @@ layout: paper
 ref: "wit2019robustness"
 title:  "Robustness in Sum-Product Networks with Continuous and Categorical Data"
 date:   2019-08-22 00:00
-tags: spns cre map
+tags: spns imp map
 image: ""
 authors: "Wit, Rob and de Campos, Cassio P. and Conaty, Diarmaid and Martinez del Rincon, Jesus"
 pdf: "http://proceedings.mlr.press/v103/de-wit19a/de-wit19a.pdf"
