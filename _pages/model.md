@@ -2,6 +2,7 @@
 layout: model
 title: by models
 permalink: /models
+order: 3
 model_topics: 
   acs: Arithmetic circuits
   cnets: Cutset networks

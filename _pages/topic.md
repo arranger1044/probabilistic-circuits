@@ -2,6 +2,7 @@
 layout: topic
 title: by topics
 permalink: /topics
+order: 4
 algo_topics: 
   str-le: Structure learning
   par-le: Parameter learning

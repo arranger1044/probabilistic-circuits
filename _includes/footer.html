@@ -6,28 +6,21 @@
     <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
 
     <div class="footer-col-wrapper">
-      <!-- <div class="footer-col footer-col-1"> -->
-      <!--   <ul class="contact-list"> -->
-      <!--     <li class="p-name"> -->
-      <!--       {%- if site.author -%} -->
-      <!--         {{ site.author | escape }} -->
-      <!--       {%- else -%} -->
-      <!--         {{ site.title | escape }} -->
-      <!--       {%- endif -%} -->
-      <!--       </li> -->
-      <!--       {%- if site.email -%} -->
-      <!--       <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
-      <!--       {%- endif -%} -->
-      <!--   </ul> -->
-      <!-- </div> -->
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+      <div class="footer-col footer-col-1">
+        {% assign tot_papers = site.papers | size %}
+        {% assign with_code = site.papers |  where_exp:"paper",
+"paper.code" | size %}
+        A systematic view of the literature about probabilistic
+        circuits: {{tot_papers}} papers ({{with_code}} with code).
       </div>
 
-      <!-- <div class="footer-col footer-col-3"> -->
-      <!--   <p>{{- site.description | escape -}}</p> -->
-      <!-- </div> -->
+      <div class="footer-col footer-col-2">
+        Done by <a href="http://web.cs.ucla.edu/~aver/">A.V.</a><br/>{%- if site.github_username -%}<a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username| escape }}</span></a>{%- endif -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        {%- if site.twitter_username -%}<a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> <span class="username">{{ site.twitter_username| escape }}</span></a>{%- endif -%}
+      </div>
     </div>
 
   </div>

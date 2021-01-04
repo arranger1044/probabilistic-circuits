@@ -44,8 +44,11 @@ collections:
 include:
   - _pages
     
-# header_pages:
-#   - _pages/year.md
+header_pages:
+  - _pages/year.md
+  - _pages/model.md
+  - _pages/topic.md
+  - _pages/code.md
   
 # Exclude from processing.
 # The following items will not be processed, by default.
