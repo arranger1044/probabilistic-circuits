@@ -20,8 +20,9 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-$model-color:       #d40d60 !default;
-$inference-color:       #d4600d !default;
+// $model-color:       #d40d60 !default;
+$model-color:       #d64984 !default;
+$inference-color:       #d6722b !default;
 $algo-color:       #76b599 !default;
 $misc-color:       #6e6e6e !default;
 
@@ -30,6 +31,9 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width:    1024px !default;
 $margin-top-header: 60px;
+$margin-top-papers: 150px;
+$margin-top-scroll: 190px;
+$margin-top-scroll-first: 260px;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;

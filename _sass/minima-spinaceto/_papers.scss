@@ -18,6 +18,8 @@
     /* max-width:750px; */
     min-width:95%;
     margin-bottom:35px;
+    position:relative;
+    z-index:5;
 }
 
 .paper-pic {
@@ -43,6 +45,12 @@
   padding-bottom:30px;
   background-color: white;
   width: 120%;
+  z-index: 8;
+}
+
+.paper-details{
+    position:relative;
+    z-index:5;
 }
 
 .paper-title{
@@ -51,13 +59,18 @@
     font-style:italic;
     /* background-color: rgb(250, 130, 0); */
     /* color: white !important; */
-    color: rgb(26, 176, 184) !important;
+    // color: rgb(26, 176, 184) !important;
+    color: #4f949e !important;
     // color: black;
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: -$margin-top-header -10px;
-    padding-top: $margin-top-header +10px -2px;
+    // margin-top: -$margin-top-header -10px;
+    // padding-top: $margin-top-header +10px -2px;
+    // margin-top: -$margin-top-scroll;
+    // padding-top: $margin-top-scroll;
     // padding-top: -2px;
+    position:relative;
+    z-index:4;
     display: inline-block;
 }
 
@@ -105,7 +118,118 @@
 
 .paper-abstract{
     display: none;
-    
+}
+
+.paper-year-link{
+    font-size: 80%;
+    font-weight:800;
+    // font-style:italic;
+    margin-top:2px;
+    margin-bottom:2px;
+    color: white;
+    background-color: #4f949e;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    max-width: 140px;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.model-link{
+    font-size: 80%;
+    font-weight:800;
+    // font-style:italic;
+    margin-top:2px;
+    margin-bottom:2px;
+    color: white;
+    background-color: $model-color;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    max-width: 140px;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.model-link a{
+    text-decoration: none;
+    color: white !important;
+}
+
+
+.inf-link{
+    font-size: 80%;
+    font-weight:800;
+    // font-style:italic;
+    margin-top:2px;
+    margin-bottom:2px;
+    color: white;
+    background-color: $inference-color;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    max-width: 140px;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.inf-link a{
+    text-decoration: none;
+    color: white !important;
+}
+
+
+.algo-link{
+    font-size: 80%;
+    font-weight:800;
+    // font-style:italic;
+    margin-top:2px;
+    margin-bottom:2px;
+    color: white;
+    background-color: $algo-color;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    max-width: 140px;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.algo-link a{
+    text-decoration: none;
+    color: white !important;
+}
+
+
+.misc-link{
+    font-size: 80%;
+    font-weight:800;
+    // font-style:italic;
+    margin-top:2px;
+    margin-bottom:2px;
+    color: white;
+    background-color: $misc-color;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    max-width: 140px;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.misc-link a{
+    text-decoration: none;
+    color: white !important;
+}
+.paper-year-link a{
+    text-decoration: none;
+    color: white !important;
 }
 
 .paper-bibtex{
@@ -113,10 +237,18 @@
 }
 
 .paper-year{
-    padding-top: 30px;
+    // padding-top: 30px;
     padding-bottom: 10px;
     font-size: 120%;
     font-weight:800;
+    margin-top: -$margin-top-scroll;
+    padding-top: $margin-top-scroll;
+    // text-decoration: underline; 
+}
+
+.paper-year.first-year{
+    margin-top: -$margin-top-scroll-first !important;
+    padding-top: $margin-top-scroll-first !important;
     // text-decoration: underline; 
 }
 
@@ -127,7 +259,11 @@ pre, code{
 }
 
 #papers {
-    padding-left:10px;        
+    padding-top: $margin-top-papers;
+    // margin-top: -$margin-top-papers;
+    padding-left:10px;
+    position:relative;
+    z-index: 6;
 }
 
 #papers ul{
@@ -320,11 +456,42 @@ pre, code{
     color: $inference-color;
 }
 
+.topic-macro{
+    font-size: 100%;
+    font-weight:800;
+}
 
-h3.paper-list-heading {
-    display: block;
+.paper-list-heading {
+    font-size: 120%;
+    font-weight:800;
+    display: inline;
     position: relative;
-    margin-top: -$margin-top-header;
-    padding-top: $margin-top-header;
+    // margin-top: -$margin-top-header;
+    // padding-top: $margin-top-header;
+    margin-top: -$margin-top-scroll;
+    padding-top: $margin-top-scroll;
     // visibility: hidden;
 }
+
+.header-link{
+    margin-bottom: 20px !important;
+    top: -4px;
+    position: relative;
+}
+
+.paper-list-heading.first-heading{
+    display: inline;
+    position: relative;
+    margin-top: -$margin-top-scroll-first !important;
+    padding-top: $margin-top-scroll-first !important;
+    // visibility: hidden;
+}
+
+
+// .paper-year {
+//     display: block;
+//     position: relative;
+//     margin-top: -$margin-top-scroll -40;
+//     padding-top: $margin-top-scroll + 40;
+//     // visibility: hidden;
+// }

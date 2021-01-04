@@ -23,8 +23,8 @@
       $("a.bibtex").click(function(event) {
       
       var label = $(this);
-      console.log($(this).parent().text());
-      console.log($(this).nextAll("div.paper-bibtex").first().text());
+      // console.log($(this).parent().text());
+      // console.log($(this).nextAll("div.paper-bibtex").first().text());
       $(this).nextAll("div.paper-bibtex").first().slideToggle("fast",
       function(){
       if ($(this).is(":visible")) {
@@ -38,8 +38,8 @@
       $("a.abstract").click(function(event) {
       
       var label = $(this);
-      <!-- console.log($(this).parent().text()); -->
-      console.log($(this).nextAll("div.paper-abstract").first().text());
+      // <!-- console.log($(this).parent().text()); -->
+      // console.log($(this).nextAll("div.paper-abstract").first().text());
       $(this).nextAll("div.paper-abstract").first().slideToggle("fast",
       function(){
       if ($(this).is(":visible")) {

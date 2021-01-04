@@ -11,7 +11,7 @@ layout: default
     <div id="quicklist">
       {%- if site.papers.size > 0 -%}
       <h3 class="paper-list-heading">{{ page.list_title | default:
-         "Publications by year" }}</h2>
+         "Publications by year" }}</h3>
       {% assign sorted = site.papers | sort: 'date' | reverse %}
       {% assign papers = sorted | group_by_exp:"paper", "paper.date | date: '%Y'" %}
       {% for year in papers %}
@@ -24,7 +24,7 @@ layout: default
       {% assign sorted = site.papers | sort: 'date' | reverse %}
       {% assign papers = sorted | group_by_exp:"paper", "paper.date | date: '%Y'" %}
       {% for year in papers %}
-      <div class="paper-year" id="{{ year.name }}">{{ year.name }}</div>
+      <div {% if forloop.first %} class="paper-year first-year" {% else %} class="paper-year" {% endif %} id="{{ year.name }}">{{ year.name }}</div>
       <ul class="paper-list">
         {% for p in year.items %}
         <li>
@@ -33,7 +33,7 @@ layout: default
         {% endfor %}
       </ul>
       {% endfor %}
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
 
 </div>

@@ -7,17 +7,17 @@
     </div>
     <div class="tags">
       {%- for t in paper.tags -%}
-      <span class={{t}}><a href="./topics#{{t}}">{{t}}</a></span>
+      <span class={{t}}><a href="{{site.topics_page[t]}}#{{t}}">{{t}}</a></span>
       {%- endfor -%}
     </div>
     </div>
-      <div class="paper-title" id="{{paper.ref}}">
+      <div class="paper-title">
       {{ paper.title | escape}}
       </div>
     <div class="paper-authors">
       {{ paper.authors }}
     </div>
-    [ <a href="{{ paper.pdf }}">paper</a> |
+    <div class="paper-details">[ <a href="{{ paper.pdf }}">paper</a> |
     <a href="#{{paper.ref}}" class="bibtex">bibtex </a>
     {%- if paper.code -%}
     | <a href="{{ paper.code }}">code </a> 
@@ -39,6 +39,8 @@
           {{ paper.bibtex | lstrip }}                
       </code></pre>
     </div>
+    </div>
   </div>
 </div>
+
 

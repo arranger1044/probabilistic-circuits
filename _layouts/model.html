@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <div id="quicklist">
+      {%- if site.papers.size > 0 -%}
+      <h3 class="paper-list-heading">{{ page.list_title | default:
+         "Publications by model" }}</h3>
+      {% for t in page.model_topics %}
+       <span class="model-link"><a href="./models#{{ t[0] }}">{{ t[0] }}</a></span>
+      {% endfor %}
+      {%- endif -%}
+  </div>
+  <div id="papers">
+    <!-- <h2 class="paper-list-heading model">Publications by model</h2> -->
+  {% for t in page.model_topics %}
+      {% assign topic_name = t[1] %}
+      {% assign topic_key = t[0] %}
+      {% include topic.html topic=topic_key name=topic_name
+  first=forloop.first topic_class="model-link"%}
+  {% endfor %}
+  </div>
+</div>
+

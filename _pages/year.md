@@ -1,6 +1,6 @@
 ---
 layout: year
-title: By year
+title: by year
 permalink: /year
 ---
 

@@ -1,6 +1,7 @@
 {% assign topic = include.topic %}
 {% assign topic_display = include.name %}
-
+{% assign first = include.first %}
+{% assign topic_class = include.topic_class %}
 
 {% assign sorted = site.papers | sort: 'date' | reverse %}
 {% assign atleastone = "no" %}
@@ -13,7 +14,11 @@
 
 
 {% if atleastone == "yes" %}
-    <h3 class="paper-list-heading" id="{{topic}}">{{topic_display}}</h3>
+    <span {% if first %} class="paper-list-heading first-heading" {%
+        else %} class="paper-list-heading" {% endif %}
+        id="{{topic}}">{{topic_display}}</span> <span style="font-size:180%">[</span> <span class="{{topic_class}}
+        header-link">{{
+        topic  }}</a></span> <span style="font-size:180%">]</span> 
 {% endif %}
 
 <ul class="paper-list">

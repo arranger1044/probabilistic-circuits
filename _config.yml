@@ -67,3 +67,38 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+topics_page:
+  str-le: topics
+  par-le: topics
+  comp: topics
+  mar: topics
+  map: topics
+  mmap: topics
+  div: topics
+  exp: topics
+  mom: topics
+  sam: topics
+  app: topics
+  imp: topics
+  cv: topics
+  nlp: topics
+  seg: topics
+  act: topics
+  spe: topics
+  rob: topics
+  bio: topics
+  the: topics
+  ppl: topics
+  rep: topics
+  hw: topics
+  sw: topics
+  xai: topics
+  misc: topics
+  acs: models
+  cnets: models
+  spns: models
+  aogs: models
+  pdgs: models
+  psdds: models
+  pcs: models
+  

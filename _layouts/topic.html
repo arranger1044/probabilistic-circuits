@@ -7,31 +7,44 @@ layout: default
   {{ content }}
   
 
-  <h2 class="paper-list-heading algo">Publications by algorithm</h2>
-  {% for t in page.algo_topics %}
-      {% assign topic_name = t[1] %}
-      {% assign topic_key = t[0] %}
-      {% include topic.html topic=topic_key name=topic_name %}
-  {% endfor %}
+    <div id="quicklist">
+      {%- if site.papers.size > 0 -%}
+      <span class="topic-macro">Sorted by inference:</span> {% for t in page.inf_topics %}
+       <span class="inf-link"><a href="./topics#{{ t[0] }}">{{ t[0] }}</a></span>
+       {% endfor %}
+       <br/>
+       <span class="topic-macro">Sorted by algorithm:</span>
+      {% for t in page.algo_topics %}
+       <span class="algo-link"><a href="./topics#{{ t[0] }}">{{ t[0] }}</a></span>
+       {% endfor %}
+       <br/>
+       <span class="topic-macro">Sorted by application:</span>
+      {% for t in page.misc_topics %}
+       <span class="misc-link"><a href="./topics#{{ t[0] }}">{{ t[0] }}</a></span>
+      {% endfor %}
+      {%- endif -%}
+  </div>
 
-  <h2 class="paper-list-heading ing">Publications by inference</h2>
+  <div id="papers">
+  <!-- <h2 class="paper-list-heading ing">Publications by inference</h2> -->
   {% for t in page.inf_topics %}
       {% assign topic_name = t[1] %}
       {% assign topic_key = t[0] %}
-      {% include topic.html topic=topic_key name=topic_name %}
+      {% include topic.html topic=topic_key name=topic_name topic_class="inf-link"%}
   {% endfor %}
 
-  <h2 class="paper-list-heading model">Publications by model</h2>
-  {% for t in page.model_topics %}
+  <!-- <h2 class="paper-list-heading algo">Publications by algorithm</h2> -->
+  {% for t in page.algo_topics %}
       {% assign topic_name = t[1] %}
       {% assign topic_key = t[0] %}
-      {% include topic.html topic=topic_key name=topic_name %}
+      {% include topic.html topic=topic_key name=topic_name topic_class="algo-link"%}
   {% endfor %}
-
-  <h2 class="paper-list-heading misc">Publications by application</h2>
+  
+  <!-- <h2 class="paper-list-heading misc">Publications by application</h2> -->
   {% for t in page.misc_topics %}
       {% assign topic_name = t[1] %}
       {% assign topic_key = t[0] %}
-      {% include topic.html topic=topic_key name=topic_name %}
+      {% include topic.html topic=topic_key name=topic_name topic_class="misc-link"%}
   {% endfor %}
+  </div>
 </div>
