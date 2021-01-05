@@ -147,9 +147,7 @@ table td { border: 1px solid #e8e8e8; }
 
 #quicklist { position: fixed; top: 60px; margin-top: 2px; padding-top: 20px; padding-bottom: 30px; background-color: white; width: 100%; z-index: 8; }
 
-#quicklist.home { width: 100%; font-size: 90%; }
-
-#quicklist.home div { max-width: 60%; }
+#quicklist.home { top: 0px !important; position: relative !important; width: 100%; font-size: 90%; }
 
 .footer-info { font-size: 90%; padding-top: 20px; padding-bottom: 20px; }
 
@@ -205,7 +203,7 @@ pre, code { white-space: normal; font-size: 80%; background-color: white; }
 
 #papers { padding-top: 150px; padding-left: 10px; position: relative; z-index: 6; }
 
-#latest-papers { padding-top: 250px; padding-left: 10px; position: relative; z-index: 6; }
+#latest-papers { padding-left: 10px; position: relative; z-index: 6; }
 
 #papers ul { padding-left: 0px; margin-top: 0px; }
 

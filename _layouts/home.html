@@ -44,7 +44,6 @@ certain well-defined properties.<br/><br/>
     </div>
     <div id="latest-papers">
     {%- if site.papers.size > 0 -%}
-    <br/>
     <ul class="paper-list">
       {% assign sorted = site.papers | sort: 'date' | reverse %}
       {%- for p in sorted limit:10 -%}

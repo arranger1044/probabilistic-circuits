@@ -48,16 +48,34 @@
   z-index: 8;
 }
 
+// @include media-query($on-palm){
+//         #quicklist {
+
+//   top:$margin-top-header;
+//   margin-top:2px;
+//   padding-top:20px;
+//   padding-bottom:30px;
+//   background-color: white;
+//   width: 100%;
+//   z-index: 8;
+// }
+
+//}
+
 #quicklist.home {
+    top:0px !important;
+    position: relative !important; 
     width: 100%;
     font-size:90%;
     // font-style:italic;
 }
 
-#quicklist.home div{
-    max-width: 60%;
-    // font-style:italic;
-}
+// #quicklist.home div{
+//     @include media-query($on-palm){
+//         max-width: 100% !important;
+//     }
+//     // font-style:italic;
+// }
 
 .footer-info{
     font-size:90%;
@@ -301,7 +319,7 @@ pre, code{
 }
 
 #latest-papers {
-    padding-top: $margin-top-papers+100;
+    // padding-top: $margin-top-papers+100;
     // margin-top: -$margin-top-papers;
     padding-left:10px;
     position:relative;
