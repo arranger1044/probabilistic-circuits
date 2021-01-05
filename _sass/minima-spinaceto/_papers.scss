@@ -44,13 +44,18 @@
   padding-top:20px;
   padding-bottom:30px;
   background-color: white;
-  width: 80%;
+  width: 100%;
   z-index: 8;
 }
 
 #quicklist.home {
-    width: 60%;
+    width: 100%;
     font-size:90%;
+    // font-style:italic;
+}
+
+#quicklist.home div{
+    max-width: 60%;
     // font-style:italic;
 }
 

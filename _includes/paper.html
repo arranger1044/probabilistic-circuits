@@ -17,20 +17,11 @@
     <div class="paper-authors">
       {{ paper.authors }}
     </div>
-    <div class="paper-details">[ <a href="{{ paper.pdf }}">paper</a>
-      {%- if paper.supplemental -%}
-      | <a href="#" class="supplemental">supplemental </a>
-      {%- endif -%}
-      {%- if paper.code -%}
-      | <a href="{{ paper.code }}">code </a> 
-      {%- endif -%}
-      {%- if paper.bibtex -%}
-      | <a href="#{{paper.ref}}" class="bibtex">bibtex </a>
-      {%- endif -%}
-      {%- if paper.abstract -%}
-      | <a href="#{{paper.ref}}" class="abstract">abstract </a>
-      {%- endif -%} 
-    ]
+    <div class="paper-details">[ <a href="{{ paper.pdf }}">paper </a>  {%- if paper.supplemental -%}
+       | <a href="#" class="supplemental">supplemental </a> 
+      {%- endif -%}      {%- if paper.code -%}       | <a href="{{ paper.code }}">code </a> 
+      {%- endif -%}      {%- if paper.bibtex -%}       | <a href="#{{paper.ref}}" class="bibtex">bibtex </a>
+      {%- endif -%}      {%- if paper.abstract -%}       | <a href="#{{paper.ref}}" class="abstract">abstract </a>      {%- endif -%}     ]
     <div class="paper-abstract">
       <pre><code>
           {{ paper.abstract | lstrip  }}
