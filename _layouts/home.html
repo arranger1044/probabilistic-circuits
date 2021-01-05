@@ -8,10 +8,42 @@ layout: default
   {%- endif -%}
 
     {{ content }}
-    <div id="papers">
+
+    <div id="quicklist" class="home">Probabilistic circuits (PCs) are computational
+      graphs encoding probability distributions.
+      PCs guarantee tractable
+computation of a query class, e.g., <a href="topics#mar">marginals</a>, <a href="topics#map">MAP inference</a>,
+      <a href="topics#exp">expectations</a>, <a href="topics">etc...</a>, if their computational graphs satisfy
+certain well-defined properties.<br/><br/>
+      Moreover, PCs unify and abstract from several tractable model formalisms
+      proposed so far,
+      e.g., <a href="models#spns">sum-product networks</a>, <a href="models#cnets">cutset networks</a>,
+      <a href="models#psdds">probabilistic sentential decision
+      diagrams</a>, <a href="models#acs">arithmetic
+      circuits</a>, <a href="models#aogs">And/Or graphs</a>, <a href="models">etc...</a>  
+      <br/>
+      You can read more about these properties and PCs
+      in <a href="http://starai.cs.ucla.edu/papers/ProbCirc20.pdf">this gentle introduction</a>.
+
+      <br/>
+      <br/>
+      This page is a systematic view of the current body of work on
+      PCs, organizing papers
+      by <a href="./year">year</a>, <a href="models">model</a>
+      and <a href="topics">topic</a>.<br/>
+      To contribute to it, send a pull request
+      to <a href="https://github.com/arranger1044/probabilistic-circuits">this
+        repo</a>.
+
+      <br/><br/>
+      <h3 class="paper-list-heading">{{ page.list_title | default:
+    "Latest publications" }}</h3><div style="display:inline; font-size:80%;"> [ last
+    update on {{ 'now' | date: "%m/%d/%Y" }}]</div>
+      
+    </div>
+    <div id="latest-papers">
     {%- if site.papers.size > 0 -%}
-    <h2 class="paper-list-heading">{{ page.list_title | default:
-    "Latest publications" }}</h2>
+    <br/>
     <ul class="paper-list">
       {% assign sorted = site.papers | sort: 'date' | reverse %}
       {%- for p in sorted limit:10 -%}
@@ -20,8 +52,9 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
-
+    </div>
+    <div id="more-links"><a href="year">more papers...</a></div>
+    <br/><br/><br/><br/>
 </div>

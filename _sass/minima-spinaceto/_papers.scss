@@ -44,9 +44,38 @@
   padding-top:20px;
   padding-bottom:30px;
   background-color: white;
-  width: 120%;
+  width: 80%;
   z-index: 8;
 }
+
+#quicklist.home {
+    width: 60%;
+    font-size:90%;
+    // font-style:italic;
+}
+
+.footer-info{
+    font-size:90%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.social-info{
+    display: inline;
+    padding-left:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#more-links{
+    color: black;
+}
+
+#more-links a{
+    text-decoration: none;
+    color: black !important;
+}
+
 
 .paper-details{
     position:relative;
@@ -260,6 +289,14 @@ pre, code{
 
 #papers {
     padding-top: $margin-top-papers;
+    // margin-top: -$margin-top-papers;
+    padding-left:10px;
+    position:relative;
+    z-index: 6;
+}
+
+#latest-papers {
+    padding-top: $margin-top-papers+100;
     // margin-top: -$margin-top-papers;
     padding-left:10px;
     position:relative;
