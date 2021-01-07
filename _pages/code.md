@@ -9,6 +9,7 @@ order: 5
 
 - [**Juice.jl**](https://github.com/Juice-jl/ProbabilisticCircuits.jl) a `Julia` package for logical and probabilistic circuits with fast `CUDA` bindings 
 - [**SPFlow**](https://github.com/SPFlow/SPFlow) an easy and extensible `python` library for <a href="models#spns">SPNs</a> compiling them to `pytorch`, `tensorflows` and `C` code
+- [**LibSPN-Keras**](https://github.com/pronobis/libspn-keras) Keras-centered TensorFlow 2.x compatible library for <a href="models#spns">SPNs</a>
 - [**LibSPN**](http://www.libspn.org/) tensorflow implementation of <a href="models#spns">SPNs</a> with bindings in `python`
 - [**Libra Toolkit**](http://libra.cs.uoregon.edu/) Learning and inference routines
      for <a href="models#acs">ACs</a> implemented in `Ocaml`

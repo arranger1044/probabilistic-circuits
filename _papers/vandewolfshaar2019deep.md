@@ -1,7 +1,7 @@
 ---
 layout: paper
 ref: "vandewolfshaar2019deep"
-title:  "Deep Generalized Convolutional Sum-Product Networks for Probabilistic Image Representations"
+title:  "Deep Generalized Convolutional Sum-Product Networks"
 date:   2019-01-3 00:00
 tags: spns par-le cv
 image: ""
