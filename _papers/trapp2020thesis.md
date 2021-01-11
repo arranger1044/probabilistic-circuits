@@ -6,6 +6,7 @@ date:   2020-12-10 00:00
 tags: spns
 image: ""
 authors: "Trapp, Martin"
+pdf: "https://trappmartin.github.io/thesis.pdf"
 venue: "Thesis"
 abstract: "Sum-Product Networks (SPNs) are flexible general-purpose probabilistic models that have received increasing attention due to their attractive inference properties. Even though there exists a large body of work on parameter and structure learning in SPNs, many of the existing approaches focus on rather simple modelling scenarios. For example, in the case of discriminative parameter learning, the labelled training examples are assumed to be abundant, and we generally consider SPNs to be defined only over a finite set of random variables. Moreover, most approaches to construct SPNs in a data-agnostic way rely on heuristic and ad-hoc strategies rather than proposing a principled solution.
 In this thesis, we examine SPNs for complex modelling scenarios. We are particularly interested in: i) principled semi-supervised parameter learning in SPNs, which guarantees that the learner cannot deteriorate in performance when adding additional unlabelled data, ii) principled structure learning in SPNs that is mathematically sound, protects us from overfitting and enables learning under missing data, and iii) extending the framework of SPNs to model possibly infinitely many random variables, and thus, establishing SPNs as a stochastic process model.
