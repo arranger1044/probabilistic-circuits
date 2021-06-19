@@ -17,6 +17,7 @@ order: 5
 - [**SumProductNetworks.jl**](https://github.com/trappmartin/SumProductNetworks.jl) Software package for SPNs. `julia`
 -  [**Tachyon**](https://github.com/KalraA/Tachyon) structure and parameter learning in `python3`
 - [**GoSPN**](https://github.com/RenatoGeh/gospn) implementing LearnSPN in Go `Go` 
+- [**SPPL**](https://github.com/probcomp/sppl) probabilistic programming language that translates generative code to generalized SPNs.
      
 
 <br/>
